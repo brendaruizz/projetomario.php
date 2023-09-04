@@ -1,1 +1,29 @@
+<?php
+    include_once("conexao.php");
+    $Nome=$_POST['nome'];
+    $RG=$_POST['RG'];
+    $CPF=$_POST("CPF");
+    $Datanascimento=date("y:m:d h:i:s");
+    $Numerodependentes=$ 
+    $Endereco=$_POST
+    $Numero=NUMBER("") 
+    $Bairro=$_POST['']
+    $Municipio=$_POST['']
+    $UF=$_POST['']
+    $Fone=FONE("")
+    $Celular= TEL("")
+    $Telefonerecado=TEL("") 
+    $Email= EMAIL("Email")
+    $Escolhacurso=$_POST['Escolhacurso']
+$result_cadastro = "INSERT INTO usuarios (nome, email, created, modified, senha, 
+situacoe_id, niveis_acesso_id) VALUES ('$nome', '$email', '$datainicio','$dataultima', 
+'$senha', '$RG', '$niveis_acesso_id')";    
+
+$resultado_cadastro = mysqli_query($conn, $result_cadastro);
+$ultimo_id = mysqli_insert_id($conn);
+
+echo "ID: $ultimo_id <br>";
+
+
+?>
 
